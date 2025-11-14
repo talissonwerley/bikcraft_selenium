@@ -1,4 +1,4 @@
-# 🧪 Automação de Testes – Bikcraft  
+# 🧪 Automação de Testes com Selenium – Bikcraft  
 Testes automatizados para o site **Bikcraft** utilizando **Python, Selenium WebDriver, Pytest e Pytest-HTML**.  
 Este projeto foi desenvolvido com foco profissional, seguindo padrões de mercado como **Page Object Model (POM)**, testes modulares, seletores estáveis e boas práticas de QA Sênior.
 
