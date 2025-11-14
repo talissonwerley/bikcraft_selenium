@@ -6,8 +6,12 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture
 def browser():
     chrome_options = Options()
+
+    # Modo headless para CI/CD (GitHub Actions)
+    chrome_options.add_argument("--headless=new")  # headless moderno
+    chrome_options.add_argument("--window-size=1920,1080")
     
-    chrome_options.add_argument("--start-maximized")
+    
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
