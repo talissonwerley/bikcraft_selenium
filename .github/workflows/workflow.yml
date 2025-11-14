@@ -24,6 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Instalar dependências
+        run: python -m pip install -r selenium_python/requirements.txt
+
       - name: Run tests with Pytest
         run: |
           pytest tests/ --html=report.html --self-contained-html
