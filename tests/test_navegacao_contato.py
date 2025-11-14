@@ -14,7 +14,7 @@ def test_formulario_contato(browser):
     home.clicar_menu_contato()
 
     # 3. Preencher todos os campos
-    contato.preencher_nome("Talisson QA Tester")
+    contato.preencher_nome(" QA Tester")
     contato.preencher_email("email@teste.com")
     contato.preencher_telefone("11999999999")
     contato.preencher_mensagem("Mensagem de teste automatizado.")

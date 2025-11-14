@@ -21,4 +21,19 @@ class HomePage:
         )
         contato_link.click()
         time.sleep(2)
-      
+    
+    def clicar_menu_seguro(self):
+        wait = WebDriverWait(self.driver, 10)
+
+        # Localiza o link "Seguros" no menu superior
+        seguro_link = wait.until(
+            EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), 'Seguros')]"))
+        )
+        seguro_link.click()
+        time.sleep(2)
+
+    def clicar_menu_bicicletas(self):
+        wait = WebDriverWait(self.driver, 10)
+        link = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), 'Bicicletas')]")))
+        link.click()
+        time.sleep(2)
