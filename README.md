@@ -40,13 +40,13 @@ selenium_python/
 │
 ├── tests/ # Suíte de testes
 │ ├── test_navegacao_contato.py
-│ ├── test_form_contato.py
 │ ├── test_navegacao_seguro.py
 │ ├── test_navegacao_bicicleta.py
-│
+│ 
 ├── conftest.py # Setup global (WebDriver, fixtures)
 ├── requirements.txt # Dependências
 └── README.md
+
 ```
 
 ---
